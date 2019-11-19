@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background-color: #ecd6e3;
+}
+
+.difficult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    padding: 10px 0px 10px;
+
+    border: 1px solid #9c2868;
+    border-radius: 20px;
+    background-color: #b32c76;
+}
+
+.difficult h1 {
+    border-bottom: 2px solid #a79696;
+    margin-bottom: 30px;
+}
+
+.difficult button {
+    background-color: #f2545b;
+    border-radius: 25px;
+
+    height: 40px;
+    width: 100px;
+
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+
+[flappy] {
+    position: relative;
+    /* border: 5px solid rgb(92, 1, 72); */
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(143, 70, 153); */
+    background-image: url('../img/flappy-bird-2.jpg');
+    overflow: hidden;
+}
+
+.bird {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+
+.pair-barrier {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barrier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barrier .edge {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #602646, #915777);
+    border: 2px solid #000;
+}
+
+.barrier .body {
+    height: 100px;
+    width: 110px;
+    background: linear-gradient(90deg, #602646, #915777);
+    border-left: 2px solid #000;
+    border-right: 1px solid #000;
+}
+
+.progress {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    z-index: 1;
+}
