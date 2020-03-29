@@ -35,7 +35,10 @@ body {
 
 .difficult button {
     background-color: #f2545b;
-    border-radius: 25px;
+    border-radius: 18px;
+    border: 1px solid #db6ca9;
+
+    cursor: pointer;
 
     height: 40px;
     width: 100px;

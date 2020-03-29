@@ -39,10 +39,12 @@ ul {
 
 li {
     width: inherit;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 li:hover {
     background-color: #63c132;
+    color: #FFF;
 }
 
 a {
@@ -51,9 +53,9 @@ a {
 
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color: inherit;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 
     width: inherit;
 }
