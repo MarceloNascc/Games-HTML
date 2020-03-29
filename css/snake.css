@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #c0c0c0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header {
+  height: 200px;
+  padding: 20px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: #FFF;
+  font-size: 60px;
+}
+
+header p {
+  font-size: 25px;
+  color: #c00b0b;
+}
+
+header p span {
+  color: #880000;
+}
